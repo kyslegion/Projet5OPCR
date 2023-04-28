@@ -6,6 +6,16 @@ const port = 3000;
 
 // Utilisez le middleware de compression
 app.use(compression());
+const ONE_MONTH_IN_SECONDS = 30 * 24 * 60 * 60;
+
+app.use('/assets/images', express.static(path.join(__dirname, './assets/images'), {
+  maxAge: ONE_MONTH_IN_SECONDS * 1000,
+  setHeaders: function (res, path, stat) {
+    res.set('Cache-Control', 'public, must-revalidate');
+    const expirationDate = new Date(Date.now() + ONE_MONTH_IN_SECONDS * 1000);
+    res.set('Expires', expirationDate.toUTCString());
+  }
+}));
 
 // Utilisez les middlewares pour servir les fichiers statiques
 app.use(express.static(path.join(__dirname, 'public')));

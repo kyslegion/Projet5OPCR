@@ -2,51 +2,18 @@
 <html lang="fr">
 <head>
 <title>Nina Carducci</title>
- <!-- Balisage JSON-LD -->
- <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Nom de l'entreprise",
-    "image": "URL de l'image",
-    "url": "URL du site Web",
-    "telephone": "Numéro de téléphone",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Adresse postale",
-      "addressLocality": "Ville",
-      "addressRegion": "Région",
-      "postalCode": "Code postal",
-      "addressCountry": "Pays"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "Latitude",
-      "longitude": "Longitude"
-    },
-    "openingHours": "Heures d'ouverture",
-    "priceRange": "Fourchette de prix",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "68 avenue Alsace-Lorraine",
-      "addressLocality": "Bordeaux",
-      "postalCode": "33200",
-      "addressCountry": "France"
-    },
-    "telephone": "05 56 67 78 89",
-    "openingHours": "Mo-Fr 10:00-19:00"
-  }
-</script>
+
 <meta name="description" content="Découvrez notre site de photographie pour capturer des moments précieux et figer le bonheur. Nous proposons des services de photographie professionnelle pour les mariages, les événements, les portraits, les paysages et bien plus encore. Explorez notre portfolio pour découvrir notre travail et contacter notre équipe pour réserver votre séance photo.">
 <meta name=viewport content="width=device-width, initial-scale=1.0">
-<link rel=stylesheet href=./assets/bootstrap/bootstrap.css>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 <link rel=stylesheet href=./assets/style.css>
 <link rel=preconnect href=https://fonts.googleapis.com>
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel=stylesheet>
 <meta charset=UTF-8>
-<script src=./assets/bootstrap/bootstrap.bundle.js></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/pako/2.0.3/pako.min.js></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 <script src=https://code.jquery.com/jquery-3.4.1.min.js integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=anonymous></script>
 <script src=./assets/maugallery.js></script>
 <script src=./assets/scripts.js></script>
@@ -60,7 +27,7 @@
 <li><a href=#gallery>Galerie</a></li>
 <li><a href=#services>Service</a></li>
 <li><a href=#contact>Contact</a></li>
-<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target=_blank><img src=assets/images/instagram.png alt="logo instagram"></a></li>
+<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target=_blank><img loading="lazy" src=assets/images/instagram.png alt="logo instagram"></a></li>
 </ul>
 </div>
 </div>
@@ -94,7 +61,7 @@
 </div>
 <div id="about">
 <div class="picture left">
-<img src=./assets/images/nina.png alt="photo d'une femme de face">
+<img loading="lazy" src=./assets/images/nina.png alt="photo d'une femme de face">
 </div>
 <div id="about-me">
 <h2 class="about-me__title">A propos de moi</h2>
@@ -107,14 +74,14 @@ C’est ce que je vous propose : saisir ces merveilleux moments au travers de mo
 <h4 class="title">Portfolio</h4>
 <div class="container py-3">
 <div class="gallery" style="display:none">
-  <img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg" alt="homme en costume et cravate avec les bras croisés">
-  <img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg" alt="deux femmes qui sourient">
-  <img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg" alt="deux paires de mains qui vont se tenir la main">
-  <img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg" alt="homme noir fermant les yeux">
-  <img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg" alt="femme en robe de mariage avec son époux en noir">
-  <img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.jpg" alt="photo de femme avec des lunettes">
-  <img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg" alt="homme sous une projection d'eau">
-  <img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg" alt="femme qui sourit devant un ordinateur">
+  <img loading="lazy" data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg" alt="homme en costume et cravate avec les bras croisés">
+  <img loading="lazy" data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg" alt="deux femmes qui sourient">
+  <img loading="lazy" data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg" alt="deux paires de mains qui vont se tenir la main">
+  <img loading="lazy" data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg" alt="homme noir fermant les yeux">
+  <img loading="lazy" data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg" alt="femme en robe de mariage avec son époux en noir">
+  <img loading="lazy" data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.jpg" alt="photo de femme avec des lunettes">
+  <img loading="lazy" data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg" alt="homme sous une projection d'eau">
+  <img loading="lazy" data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg" alt="femme qui sourit devant un ordinateur">
 </div>
 
 </div>
@@ -187,7 +154,7 @@ C’est ce que je vous propose : saisir ces merveilleux moments au travers de mo
   
 </div>
 <div class="picture right">
-<img src=./assets/images/camera.png alt="camera rouge dans le noir">
+<img src=./assets/images/camera.png loading="lazy" alt="camera rouge dans le noir">
 </div>
 </div>
 </div>
