@@ -2,12 +2,13 @@ const express = require('express');
 const path = require('path');
 const compression = require('compression');
 const app = express();
-const port = 4000;
+const port = 3000;
 
 // Utilisez le middleware de compression
 app.use(compression());
 const ONE_MONTH_IN_SECONDS = 30 * 24 * 60 * 60;
 
+//enregistrement des images dans le cache
 app.use('/assets/images', express.static(path.join(__dirname, './assets/images'), {
   maxAge: ONE_MONTH_IN_SECONDS * 1000,
   setHeaders: function (res, path, stat) {
