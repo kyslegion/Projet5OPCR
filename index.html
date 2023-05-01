@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<title>Nina Carducci,photographe passionée !</title>
-
+<title>Nina Carducci, photographe sur Bordeaux </title>
 <meta name="description" content="Découvrez notre site de photographie pour capturer des moments précieux et figer le bonheur. Nous proposons des services de photographie professionnelle pour les mariages, les événements, les portraits, les paysages et bien plus encore. Explorez notre portfolio pour découvrir notre travail et contacter notre équipe pour réserver votre séance photo.">
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" value="summary">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="Nina Carducci, photographe sur Bordeaux" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://NinaCarducci.fr/" />
+<meta property="og:image" content="http://www.googleusercontent.com/assets/images/nina.jpg" />
+<meta property="og:description" content="Découvrez notre site de photographie pour capturer des moments précieux et figer le bonheur. Nous proposons des services de photographie professionnelle pour les mariages, les événements, les portraits, les paysages et bien plus encore. Explorez notre portfolio pour découvrir notre travail et contacter notre équipe pour réserver votre séance photo." />
+
+
 <meta name=viewport content="width=device-width, initial-scale=1.0">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
@@ -17,6 +28,30 @@
 <script src=https://code.jquery.com/jquery-3.4.1.min.js integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=anonymous></script>
 <script src=./assets/maugallery.js></script>
 <script src=./assets/scripts.js></script>
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Nina Carducci",
+    "image": "http://www.googleusercontent.com/assets/images/nina.jpg",
+    "telephone": "05 56 67 78 89",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "68 avenue Alsace-Lorraine",
+      "addressLocality": "Bordeaux",
+      "postalCode": "33200"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": {
+        "@type": "DayOfWeek",
+        "name": "lundi au vendredi"
+      },
+      "opens": "2023-04-30T10:00:00+02:00",
+      "closes": "2023-04-30T19:00:00+02:00"
+    }
+  }
+  </script>
 </head>
 <body>
 <div class="top-header">
@@ -142,6 +177,8 @@ C’est ce que je vous propose : saisir ces merveilleux moments au travers de mo
 <div class="form-container">
 <h6>Une question ? Une demande de devis ?</h6>
 <p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
+<p>Adresse :</p><p>68 avenue Alsace-Lorraine</p><p>33200</p><p>Bordeaux</p>
+<p>Téléphone :</p><p>05 56 67 78 89</p><p>du lundi au vendredi de 10h à 19h</p>
 <form method="post">
     <label for="nom">Nom</label>
     <input type="text" name="nom" id="nom">
