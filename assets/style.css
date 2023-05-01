@@ -271,7 +271,9 @@ input[type="submit"] {
 .service__price h6{
 	font-size: 24px;
 }
-
+.right{
+	height: fit-content !important;
+}
 @media all and (max-width: 1180px) {
 	.picture {
 		flex : 2;

@@ -2,6 +2,32 @@
 <html lang="fr">
 <head>
 <title>Nina Carducci, photographe sur Bordeaux </title>
+
+<!-- <script type="application/ld+json" src="nina-carducci-local-business.js"></script> -->
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Nina Carducci",
+    "image": "http://www.googleusercontent.com/assets/images/nina.jpg",
+    "telephone": "05 56 67 78 89",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "68 avenue Alsace-Lorraine",
+      "addressLocality": "Bordeaux",
+      "postalCode": "33200"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": {
+        "@type": "DayOfWeek",
+        "name": "lundi au vendredi"
+      },
+      "opens": "2023-04-30T10:00:00+02:00",
+      "closes": "2023-04-30T19:00:00+02:00"
+    }
+  }
+  </script>
 <meta name="description" content="Découvrez notre site de photographie pour capturer des moments précieux et figer le bonheur. Nous proposons des services de photographie professionnelle pour les mariages, les événements, les portraits, les paysages et bien plus encore. Explorez notre portfolio pour découvrir notre travail et contacter notre équipe pour réserver votre séance photo.">
 
 <!-- Twitter Card data -->
@@ -28,37 +54,13 @@
 <script src=https://code.jquery.com/jquery-3.4.1.min.js integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=anonymous></script>
 <script src=./assets/maugallery.js></script>
 <script src=./assets/scripts.js></script>
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Nina Carducci",
-    "image": "http://www.googleusercontent.com/assets/images/nina.jpg",
-    "telephone": "05 56 67 78 89",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "68 avenue Alsace-Lorraine",
-      "addressLocality": "Bordeaux",
-      "postalCode": "33200"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": {
-        "@type": "DayOfWeek",
-        "name": "lundi au vendredi"
-      },
-      "opens": "2023-04-30T10:00:00+02:00",
-      "closes": "2023-04-30T19:00:00+02:00"
-    }
-  }
-  </script>
+
 </head>
 <body>
   <header>
     <nav><div class="top-header" role="navigation">
       <h1 class="name">Nina Carducci</h1>
       <div class="nav">
-      <ul>
         <ul>
           <li><a href="#about" aria-label="À propos">À propos</a></li>
           <li><a href="#gallery" aria-label="Galerie">Galerie</a></li>
@@ -113,7 +115,7 @@
       <h4 class="title">Portfolio</h4>
       <div class="container py-3">
         <div class="gallery" style="display:none">
-          <img loading="lazy" data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg"/>
+          <img loading="lazy" data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg" alt="Salle de concert avec lumière rouge dans le noir"/>
           <img loading="lazy" data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg" alt="homme en costume et cravate avec les bras croisés">
           <img loading="lazy" data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg" alt="deux femmes qui sourient">
           <img loading="lazy" data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg" alt="deux paires de mains qui vont se tenir la main">
