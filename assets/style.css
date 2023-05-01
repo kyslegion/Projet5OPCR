@@ -71,6 +71,7 @@ body {
 .picture img {
 	width: 100%;
 	height: 100%;
+	
 
 }
 #about-me {
@@ -86,6 +87,7 @@ body {
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	font-size: 16px;
 }
 #about-me p {
 	width: 80%;
@@ -149,6 +151,7 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
+	font-size: 40px;
 
 }
 .quote__author {
@@ -215,8 +218,14 @@ body {
 }
 .form-container {
 	flex : 2;
-
 }
+.form-container h6{
+	font-size: 28px;
+}
+.form-container p{
+	font-size: 16px;
+}
+
 form {
 	display: flex;
 	flex-direction: column;
@@ -249,6 +258,18 @@ input[type="submit"] {
 .w-100 {
     width: 100%!important;
 	height: 100% !important;
+}
+.service__description h6{
+	font-size: 28px;
+}
+#gallery .title{
+	font-size: 28px;
+}
+#services .title{
+	font-size: 28px;
+}
+.service__price h6{
+	font-size: 24px;
 }
 
 @media all and (max-width: 1180px) {
