@@ -106,7 +106,7 @@
     },
     prevImage() {
       let arrowDiv = null;
-      $("").each(function() {
+      $("img.gallery-item").each(function() {
         if ($(this).attr("src") === $(".lightboxImage").attr("src")) {
           arrowDiv = $(this);
         }
@@ -133,16 +133,16 @@
           j = first;
         }
       });
-
+    
       j--;
-      if (j >= values.length) {
-        j = 0;
+      if (j < 0) {
+        j = values.length - 1;
       }
-
-
+    
       customPlayerControls = values[j] || values[values.length - 1];
       $(".lightboxImage").attr("src", $(customPlayerControls).attr("src"));
     },
+    
     nextImage() {
       
       let arrowDiv = null;
